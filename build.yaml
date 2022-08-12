@@ -1,3 +1,3 @@
 board: [seeeduino_xiao_ble]
-shield: [arachnophobe]
+shield: [arachnophobe, settings_reset]
 
