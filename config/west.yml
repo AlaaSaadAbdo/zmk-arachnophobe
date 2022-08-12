@@ -1,17 +1,47 @@
+# manifest:
+#   remotes:
+#     - name: zmkfirmware
+#       url-base: https://github.com/zmkfirmware
+#     - name: petejohanson
+#       url-base: https://github.com/petejohanson
+#   projects:
+#     # - name: zmk
+#     #   remote: zmkfirmware
+#     #   revision: main
+#     #   import: app/west.yml
+#     - name: zmk
+#       remote: petejohanson
+#       revision: hardware/rp2040-support
+#       import: app/west.yml
+#   self:
+#     path: config
+# manifest:
+#   remotes:
+#     - name: zmkfirmware
+#       url-base: https://github.com/zmkfirmware
+#   projects:
+#     - name: zmk
+#       remote: zmkfirmware
+#       revision: main
+#       import: app/west.yml
+#   self:
+#     path: config
 manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: alaasaadabdo
+      url-base: https://github.com/alaasaadabdo
   projects:
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
     - name: zmk
-      remote: petejohanson
-      revision: hardware/rp2040-support
+      # remote: zmkfirmware
+      # revision: main
+      # remote: caksoylar
+      # revision: caksoylar/experimental
+      remote: alaasaadabdo
+      revision: alaa
       import: app/west.yml
   self:
     path: config
