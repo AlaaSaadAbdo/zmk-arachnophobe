@@ -20,6 +20,10 @@
 
 #define SK(KEY) &nk KEY KEY
 
+#define KEYS_L 0 1 4 5 6 7 8 14 14 15 16 17 18   // left-hand keys
+#define KEYS_R 2 3 9 10 11 12 13 19 20 21 22 23  // right-hand keys
+#define THUMBS 24 25 26 27 28 29                 // thumb keys
+
 &sk {
   release-after-ms = <60000>;
   quick-release;
