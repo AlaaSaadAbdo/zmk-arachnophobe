@@ -1,0 +1,70 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │     0   1          │ │         2   3      │
+  │ 4   5   6   7   8  │ │ 9   10  11  12  13 │
+  │ 14  15  16  17  18 │ │ 19  20  21  22  23 │
+  ╰───────╮ 24  25  26 │ │ 27  28  29 ╭───────╯
+          ╰────────────╯ ╰────────────╯            */
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <30>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+    global-quick-tap-ms = <150>; \
+  };
+
+#define GCOMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <30>; \
+    key-positions = <KEYPOS>; \
+  };
+
+#define ALPHA_ALL HDN HDNW
+#define ALPHA_MAC HDN
+#define ALPHA_WIN HDNW
+
+/* Missing Alphas */
+COMBO(Q, &kp Q, 16 17, ALPHA_ALL) // Q 
+COMBO(Z, &kp Z, 0 1, ALPHA_ALL) // Z
+COMBO(V, &kp V, 15 16, ALPHA_NO_THUMB) // V
+COMBO(X, &kp X, 2 3, ATHUMB ATHUMBW) // Z
+
+/* Brackets */
+COMBO(left_bracket, &kp LBKT, 4 5, ALPHA_ALL)
+COMBO(right_bracket, &kp RBKT, 12 13, ALPHA_ALL)
+COMBO(left_parenthesis, &kp LPAR, 5 6, ALPHA_ALL)
+COMBO(right_parenthesis, &kp RPAR, 11 12, ALPHA_ALL)
+COMBO(left_brace, &kp LBRC, 6 7, ALPHA_ALL)
+COMBO(right_brace, &kp RBRC, 10 11, ALPHA_ALL)
+
+/* Text */
+COMBO(redo, &kp LG(LS(Z)), 3 4, ALPHA_MAC)
+COMBO(undo, &kp LG(Z), 13 14, ALPHA_MAC)
+COMBO(redow, &kp LC(Y), 3 4, ALPHA_WIN)
+COMBO(undow, &kp LC(Z), 13 14, ALPHA_WIN)
+COMBO(caps_word, &caps_word, 28 27, ALPHA_ALL)
+
+/* misc */
+COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 15 16 17, ALPHA_ALL)
+COMBO(launcher, &kp LG(SPACE), 15 17, ALPHA_ALL)
+COMBO(esc, &kp ESC, 24 16, ALPHA_ALL)
+COMBO(select_all, &kp LG(A) , 15 16, NAV)
+COMBO(select_all_win, &kp LC(A), 15 16, NAVW)
+
+
+/* bluetooth */
+COMBO(bt_clear, &bt BT_CLR, 4 8, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 14 15, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 15 16, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 16 17, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 17 18, NAV NAVW)
+  
+/* mac | win */
+GCOMBO(switch_to_HDN_mac, &to HDN, 24 25 26)
+GCOMBO(switch_to_HDN_win, &to HDNW, 27 28 29)
