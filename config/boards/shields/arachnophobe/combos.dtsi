@@ -1,11 +1,11 @@
 /*                KEY POSITIONS
 
-  ╭────────────────────╮ ╭────────────────────╮
-  │     0   1          │ │         2   3      │
-  │ 4   5   6   7   8  │ │ 9   10  11  12  13 │
-  │ 14  15  16  17  18 │ │ 19  20  21  22  23 │
-  ╰───────╮ 24  25  26 │ │ 27  28  29 ╭───────╯
-          ╰────────────╯ ╰────────────╯            */
+  ╭────────────────────────╮ ╭─────────────────────────╮
+  │     0   1              │ │              2   3      │
+  │ 4   5   6   7   8      │ │      9   10  11  12  13 │
+  │ 14  15  16  17  18     │ │     19  20  21  22  23  │
+  ╰───────╮     24  25  26 │ │ 27  28  29     ╭────────╯
+          ╰────────────────╯ ╰────────────────╯            */
 
 compatible = "zmk,combos";
 
@@ -33,7 +33,7 @@ compatible = "zmk,combos";
 COMBO(Q, &kp Q, 16 17, ALPHA_ALL) // Q 
 COMBO(Z, &kp Z, 0 1, ALPHA_ALL) // Z
 COMBO(V, &kp V, 15 16, ALPHA_ALL) // V
-COMBO(X, &kp X, 2 3, ALPHA_ALL) // Z
+COMBO(X, &kp X, 2 3, ALPHA_ALL) // X
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 4 5, ALPHA_ALL)
@@ -53,7 +53,7 @@ COMBO(caps_word, &caps_word, 28 27, ALPHA_ALL)
 /* misc */
 COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 15 16 17, ALPHA_ALL)
 COMBO(launcher, &kp LG(SPACE), 15 17, ALPHA_ALL)
-COMBO(esc, &kp ESC, 24 16, ALPHA_ALL)
+COMBO(esc, &kp ESC, 17 24, ALPHA_ALL)
 COMBO(select_all, &kp LG(A) , 15 16, NAV)
 COMBO(select_all_win, &kp LC(A), 15 16, NAVW)
 COMBO(swapper, &swapper, 14 25, ALPHA_MAC)
