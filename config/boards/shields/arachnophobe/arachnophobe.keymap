@@ -11,12 +11,14 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define HDN     0
-#define NAV     1
-#define SYM     2
-#define HDNW    3
-#define NAVW    4
-#define SYMW    5
+#define HDN      0
+#define HDN_HRM  1
+#define NAV      2
+#define SYM      3
+#define HDNW     4
+#define HDNW_HRM 5
+#define NAVW     6
+#define SYMW     7
 
 #define SK(KEY) &nk KEY KEY
 
@@ -159,6 +161,17 @@
             >;
         };
 
+        hdn_hrm {
+            label = "HDN_HRM";
+            bindings = <
+                   &kp F         &kp M                                                                     &kp J         &kp K         
+     &hrml LCTRL R &hrml LALT S  &hrml LGUI N   &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
+     &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                 &macro_nav     &kp SPACE      &key_repeat       &kp SQT        &skq LSHFT   &macro_sym
+            >;
+        };
+
         navitation {
             label = "NAV";
             bindings = <
@@ -182,13 +195,24 @@
         };
 
         hdnw {
-            label = "HDN";
+            label = "HDNW";
             bindings = <
                    &kp F         &kp M                                                                     &kp J         &kp K         
      &kp R         &kp S         &kp N          &kp T          &kp G             &kp COMMA    &kp A        &kp E         &kp I         &kp H
      &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                  &macro_navW     &kp SPACE      &kp SQT          &kp SQT        &skq LSHFT   &macro_symW
+            >;
+        };
+
+        hdnw_hrm {
+            label = "HDNW_HRM";
+            bindings = <
+                   &kp F         &kp M                                                                     &kp J         &kp K         
+     &hrml LCTRL R &hrml LALT S  &hrml LGUI N   &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
+     &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                 &macro_nav     &kp SPACE      &key_repeat       &kp SQT        &skq LSHFT   &macro_sym
             >;
         };
 
@@ -210,7 +234,7 @@
      &kp N3        &kp N2       &kp N1         &kp N0          &kp EQUAL         &kp COMMA   SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
      &kp N7        &kp N6       &kp N5         &kp N4          &kp MINUS         &kp DOT     &kp QMARK     &kp EXCL     &kp SLASH     &kp GRAVE
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                   &kp BACKSLASH    &trans     &trans            &trans        &trans        &trans
+                                   &trans    &trans     &kp BACKSLASH            &trans        &trans        &trans
             >;
         };
 
