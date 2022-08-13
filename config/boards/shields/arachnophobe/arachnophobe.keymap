@@ -155,7 +155,7 @@
      &kp R         &kp S         &kp N          &kp T          &kp G             &kp COMMA    &kp A        &kp E         &kp I         &kp H
      &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                 &macro_nav     &kp SPACE      &kp SQT           &none        &skq LSHFT   &macro_sym
+                                 &macro_nav     &kp SPACE      &kp SQT           &kp SQT        &skq LSHFT   &macro_sym
             >;
         };
 
@@ -188,7 +188,7 @@
      &kp R         &kp S         &kp N          &kp T          &kp G             &kp COMMA    &kp A        &kp E         &kp I         &kp H
      &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                 &macro_navW     &kp SPACE      &kp SQT           &none        &skq LSHFT   &macro_symW
+                                 &macro_navW     &kp SPACE      &kp SQT          &kp SQT        &skq LSHFT   &macro_symW
             >;
         };
 
