@@ -61,11 +61,11 @@ COMBO(swapperw, &swapperw, 14 25, ALPHA_WIN)
 
 
 /* bluetooth */
-COMBO(bt_clear, &bt BT_CLR, 4 8, NAV NAVW)
-COMBO(bt_0, &bt BT_SEL 0, 14 15, NAV NAVW)
-COMBO(bt_1, &bt BT_SEL 1, 15 16, NAV NAVW)
-COMBO(bt_2, &bt BT_SEL 2, 16 17, NAV NAVW)
-COMBO(bt_3, &bt BT_SEL 3, 17 18, NAV NAVW)
+COMBO(bt_clear, &bt BT_CLR, 27 28 29, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 19 20, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 20 21, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 21 22, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 22 23, NAV NAVW)
   
 /* mac | win */
 GCOMBO(switch_to_HDN_mac, &to HDN, 24 25 26)
