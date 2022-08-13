@@ -151,11 +151,11 @@
         hdn {
             label = "HDN";
             bindings = <
-                   &kp F         &kp M                                                                       &kp J         &kp K         
-     &hrml LCTRL R &hrml LALT S  &hrml LGUI N   &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
-     &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U          &kp O         &kp Y         &kp B
+                   &kp F         &kp M                                                                     &kp J         &kp K         
+     &kp R         &kp S         &kp N          &kp T          &kp G             &kp COMMA    &kp A        &kp E         &kp I         &kp H
+     &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                 &macro_nav     &kp SPACE      &kp SQT           &kp SQT        &skq LSHFT   &macro_sym
+                                 &macro_nav     &kp SPACE      &key_repeat       &kp SQT        &skq LSHFT   &macro_sym
             >;
         };
 
@@ -185,7 +185,7 @@
             label = "HDN";
             bindings = <
                    &kp F         &kp M                                                                     &kp J         &kp K         
-     &hrml LCTRL R &hrml LALT S  &hrml LGUI N   &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
+     &kp R         &kp S         &kp N          &kp T          &kp G             &kp COMMA    &kp A        &kp E         &kp I         &kp H
      &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                  &macro_navW     &kp SPACE      &kp SQT          &kp SQT        &skq LSHFT   &macro_symW
