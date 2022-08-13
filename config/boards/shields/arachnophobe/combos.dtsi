@@ -44,11 +44,11 @@ COMBO(left_brace, &kp LBRC, 6 7, ALPHA_ALL)
 COMBO(right_brace, &kp RBRC, 10 11, ALPHA_ALL)
 
 /* Text */
-COMBO(redo, &kp LG(LS(Z)), 3 4, ALPHA_MAC)
-COMBO(undo, &kp LG(Z), 13 14, ALPHA_MAC)
-COMBO(redow, &kp LC(Y), 3 4, ALPHA_WIN)
-COMBO(undow, &kp LC(Z), 13 14, ALPHA_WIN)
-COMBO(caps_word, &caps_word, 28 27, ALPHA_ALL)
+COMBO(redo, &kp LG(LS(Z)), 7 8, ALPHA_MAC)
+COMBO(undo, &kp LG(Z), 17 18, ALPHA_MAC)
+COMBO(redow, &kp LC(Y), 7 8, ALPHA_WIN)
+COMBO(undow, &kp LC(Z), 17 18, ALPHA_WIN)
+COMBO(caps_word, &caps_word, 26 27, ALPHA_ALL)
 
 /* misc */
 COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 15 16 17, ALPHA_ALL)
