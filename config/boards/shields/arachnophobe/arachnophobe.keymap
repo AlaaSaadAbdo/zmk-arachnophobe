@@ -209,10 +209,10 @@
             label = "HDNW_HRM";
             bindings = <
                    &kp F         &kp M                                                                     &kp J         &kp K         
-     &hrml LCTRL R &hrml LALT S  &hrml LGUI N   &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
+     &hrml LGUI R &hrml LALT S  &hrml LCTRL N   &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LCTRL E  &hrmr LALT I  &hrmr LGUI H
      &kp W         &kp C         &kp L          &kp D          &kp P             &kp DOT      &kp U        &kp O         &kp Y         &kp B
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                 &macro_nav     &kp SPACE      &key_repeat       &kp SQT        &skq LSHFT   &macro_sym
+                                 &macro_navW     &kp SPACE      &key_repeat       &kp SQT        &skq LSHFT   &macro_symW
             >;
         };
 
