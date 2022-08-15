@@ -56,8 +56,8 @@ COMBO(launcher, &kp LG(SPACE), 15 17, ALPHA_ALL)
 COMBO(esc, &kp ESC, 17 24, ALPHA_ALL)
 COMBO(select_all, &kp LG(A) , 15 16, NAV)
 COMBO(select_all_win, &kp LC(A), 15 16, NAVW)
-COMBO(swapper, &swapper, 14 25, ALPHA_MAC)
-COMBO(swapperw, &swapperw, 14 25, ALPHA_WIN)
+COMBO(swapper, &swapper, 16 18, ALPHA_MAC)
+COMBO(swapperw, &swapperw, 16 18, ALPHA_WIN)
 
 
 /* bluetooth */
